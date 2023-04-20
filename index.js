@@ -54,13 +54,6 @@ window.onload = function () {
   deleteButton.addEventListener("click", () => {
     alert("삭제 완료");
     localStorage.removeItem(engWord.innerHTML);
-    while (
-      localStorage.key(randomWordKey) === engWord.innerHTML &&
-      localStorage.length !== 1
-    ) {
-      randomWordKey = Math.round(Math.random() * (localStorage.length - 1));
-    }
-    engWord.innerHTML = localStorage.key(randomWordKey);
   });
 };
 
