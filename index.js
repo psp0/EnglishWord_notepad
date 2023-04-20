@@ -29,7 +29,7 @@ window.onload = function () {
 
   //-------------------
 
-  const addButton = document.querySelectorAll(".add-box button")[0];
+  const addButton = document.querySelectorAll(".add-box .add-button")[0];
   addButton.addEventListener("click", (e) => {
     let engInput = document.querySelectorAll(".english-word-input")[0];
     let korInput = document.querySelectorAll(".korean-word-input")[0];
@@ -45,8 +45,17 @@ window.onload = function () {
   });
   //-------------------
 
-  const speechButton = document.querySelectorAll(".display-box  button")[0];
-  speechButton.addEventListener("click", () => {
+  const cardSpeechButton = document.querySelectorAll(
+    ".display-box  .speech-button"
+  )[0];
+  const inputSpeechButton = document.querySelectorAll(
+    ".add-box  .speech-button"
+  )[0];
+  inputSpeechButton.addEventListener("click", () => {
+    let engInput = document.querySelectorAll(".english-word-input")[0];
+    speech(engInput.value);
+  });
+  cardSpeechButton.addEventListener("click", () => {
     speech(engWord.innerHTML);
   });
   //-------------------
