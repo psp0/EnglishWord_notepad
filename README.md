@@ -4,4 +4,4 @@
 
 바로 이용하기-> https://psp0.github.io/MemoWeb_for_memorizing_engWords/
 
-(git에 익숙치 않아서 commit이 이상할 수 있음)
+(git에 익숙치 않아서 git의 여러 기능을 시도하고 있을 수 있음)
